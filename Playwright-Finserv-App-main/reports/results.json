@@ -2,12 +2,13 @@
   "config": {
     "argv": [
       "C:\\Program Files\\nodejs\\node.exe",
-      "C:\\Users\\talentfarm_learner\\Desktop\\PlayWrightJavascript\\node_modules\\@playwright\\test\\cli.js",
+      "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "--project=insurance-chromium"
+      "--grep",
+      "@regression"
     ],
-    "configFile": "C:\\Users\\talentfarm_learner\\Desktop\\PlayWrightJavascript\\playwright.config.js",
-    "rootDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/tests",
+    "configFile": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\playwright.config.js",
+    "rootDir": "C:/Users/talentfarm_learner/Desktop/financial-services-retail-automation-latest/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": true,
@@ -17,82 +18,24 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 2
+    },
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/reports/test-results",
+        "outputDir": "C:/Users/talentfarm_learner/Desktop/financial-services-retail-automation-latest/reports/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 2
+        },
         "id": "finserve-chromium",
         "name": "finserve-chromium",
-        "testDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/tests",
+        "testDir": "C:/Users/talentfarm_learner/Desktop/financial-services-retail-automation-latest/tests",
         "testIgnore": [
           "**/insurance-order-entry/**"
         ],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/reports/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "finserve-firefox",
-        "name": "finserve-firefox",
-        "testDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/tests",
-        "testIgnore": [
-          "**/insurance-order-entry/**"
-        ],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/reports/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "finserve-webkit",
-        "name": "finserve-webkit",
-        "testDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/tests",
-        "testIgnore": [
-          "**/insurance-order-entry/**"
-        ],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/reports/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "finserve-mobile-chrome",
-        "name": "finserve-mobile-chrome",
-        "testDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/tests",
-        "testIgnore": [
-          "**/insurance-order-entry/**"
-        ],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/reports/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "insurance-chromium",
-        "name": "insurance-chromium",
-        "testDir": "C:/Users/talentfarm_learner/Desktop/PlayWrightJavascript/tests/insurance-order-entry",
-        "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
@@ -127,23 +70,1615 @@
     "tags": [],
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
-    "version": "1.61.1",
+    "version": "1.62.1",
     "workers": 2,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found",
-      "stack": "Error: No tests found"
+      "title": "api\\api.spec.js",
+      "file": "api/api.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API @api",
+          "file": "api/api.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "login endpoint rejects invalid credentials with 401/422 @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1006,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:45.760Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-1c58e8df217ef36b1a36",
+              "file": "api/api.spec.js",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "mutual fund listing endpoint returns an array of funds @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 463,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:46.961Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-d8e245328540d3e3b2b5",
+              "file": "api/api.spec.js",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "mutual fund detail endpoint returns fund fields matching schema @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 490,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:47.465Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-e328a112610cece05f8b",
+              "file": "api/api.spec.js",
+              "line": 45,
+              "column": 3
+            },
+            {
+              "title": "portfolio endpoint requires authentication and returns holdings for a valid user @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 598,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:48.007Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-314f22832884fe302318",
+              "file": "api/api.spec.js",
+              "line": 54,
+              "column": 3
+            },
+            {
+              "title": "orders endpoint reflects a newly created transaction @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 662,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:46.044Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-88535c4253f22dbf0823",
+              "file": "api/api.spec.js",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "policies endpoint returns policy records with a valid status enum @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 691,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:46.858Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-7393fd7f18c737b05f08",
+              "file": "api/api.spec.js",
+              "line": 66,
+              "column": 3
+            },
+            {
+              "title": "transactions endpoint returns the latest transaction consistent with UI expectations @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 686,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:47.586Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-65d49c9a873d75ee7694",
+              "file": "api/api.spec.js",
+              "line": 75,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "auth\\login.spec.js",
+      "file": "auth/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication @auth",
+          "file": "auth/login.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "invalid credentials show an error and do not navigate @regression",
+              "ok": true,
+              "tags": [
+                "auth",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3365,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:48.466Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-d9456fef9e03d0b95079",
+              "file": "auth/login.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "locked account is prevented from logging in @regression",
+              "ok": true,
+              "tags": [
+                "auth",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3915,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:48.800Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-7a890d09c7a6f07d5a81",
+              "file": "auth/login.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "empty email/password shows validation without a server round trip @regression",
+              "ok": true,
+              "tags": [
+                "auth",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1758,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:52.089Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-1b7a66828f186eeab765",
+              "file": "auth/login.spec.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "unauthenticated user is redirected to login for protected routes @regression",
+              "ok": true,
+              "tags": [
+                "auth",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5141,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:53.091Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-640ba91ade8e8e5feb60",
+              "file": "auth/login.spec.js",
+              "line": 42,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dashboard\\dashboard.spec.js",
+      "file": "dashboard/dashboard.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Dashboard @dashboard",
+          "file": "dashboard/dashboard.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "dashboard shows an empty state for a brand-new user with no holdings @regression",
+              "ok": true,
+              "tags": [
+                "dashboard",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3960,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:53.910Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c34829621fa3532cfe3f-87065046510ceeaff306",
+              "file": "dashboard/dashboard.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "navigating from dashboard cards routes to the correct module @regression",
+              "ok": true,
+              "tags": [
+                "dashboard",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4479,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:57.909Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c34829621fa3532cfe3f-5c1925080eae8679f788",
+              "file": "dashboard/dashboard.spec.js",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "portfolio value on dashboard reconciles with portfolio page total @regression",
+              "ok": false,
+              "tags": [
+                "dashboard",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 13014,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('login-email')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('login-email')\u001b[22m\n\n    at LoginPage.login (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\LoginPage.js:26:27)\n    at loginAs (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\fixtures\\auth.fixture.js:14:19)\n    at Object.qaUserPage (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\fixtures\\auth.fixture.js:22:5)",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\LoginPage.js",
+                          "column": 27,
+                          "line": 26
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.js:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m login(email\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memailInput\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\LoginPage.js",
+                            "column": 27,
+                            "line": 26
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('login-email')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.js:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m login(email\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memailInput\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\u001b[0m\n\u001b[2m    at LoginPage.login (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\LoginPage.js:26:27)\u001b[22m\n\u001b[2m    at loginAs (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\fixtures\\auth.fixture.js:14:19)\u001b[22m\n\u001b[2m    at Object.qaUserPage (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\fixtures\\auth.fixture.js:22:5)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:56:58.282Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\dashboard-dashboard-Dashbo-1ca44-folio-page-total-regression-finserve-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\dashboard-dashboard-Dashbo-1ca44-folio-page-total-regression-finserve-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\dashboard-dashboard-Dashbo-1ca44-folio-page-total-regression-finserve-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\LoginPage.js",
+                        "column": 27,
+                        "line": 26
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c34829621fa3532cfe3f-45106bd7310af6f844f0",
+              "file": "dashboard/dashboard.spec.js",
+              "line": 29,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "insurance\\insurance.spec.js",
+      "file": "insurance/insurance.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Insurance Discovery @insurance",
+          "file": "insurance/insurance.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "filtering by category narrows the product list @regression",
+              "ok": true,
+              "tags": [
+                "insurance",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3834,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:02.436Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "21c65df6cbe159e97221-66dc861a1db04416dd8a",
+              "file": "insurance/insurance.spec.js",
+              "line": 13,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Insurance Purchase @insurance",
+          "file": "insurance/insurance.spec.js",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "missing mandatory nominee name blocks purchase @regression",
+              "ok": true,
+              "tags": [
+                "insurance",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5306,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:06.308Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "21c65df6cbe159e97221-2f5dcb75471d86a4b8d8",
+              "file": "insurance/insurance.spec.js",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "future DOB blocks purchase @regression",
+              "ok": false,
+              "tags": [
+                "insurance",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15087,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('form-error-summary')\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('form-error-summary')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('form-error-summary')\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('form-error-summary')\u001b[22m\n\n    at InsurancePage.expectValidationError (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\InsurancePage.js:105:40)\n    at C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\insurance\\insurance.spec.js:48:21",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\InsurancePage.js",
+                          "column": 40,
+                          "line": 105
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\InsurancePage.js:105\n\n\u001b[0m \u001b[90m 103 |\u001b[39m\n \u001b[90m 104 |\u001b[39m   \u001b[36masync\u001b[39m expectValidationError(pattern) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 105 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mvalidationError)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 106 |\u001b[39m     \u001b[36mif\u001b[39m (pattern) \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mvalidationError)\u001b[33m.\u001b[39mtoHaveText(pattern)\u001b[33m;\u001b[39m\n \u001b[90m 107 |\u001b[39m   }\n \u001b[90m 108 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\InsurancePage.js",
+                            "column": 40,
+                            "line": 105
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('form-error-summary')\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('form-error-summary')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\InsurancePage.js:105\n\n\u001b[0m \u001b[90m 103 |\u001b[39m\n \u001b[90m 104 |\u001b[39m   \u001b[36masync\u001b[39m expectValidationError(pattern) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 105 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mvalidationError)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 106 |\u001b[39m     \u001b[36mif\u001b[39m (pattern) \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mvalidationError)\u001b[33m.\u001b[39mtoHaveText(pattern)\u001b[33m;\u001b[39m\n \u001b[90m 107 |\u001b[39m   }\n \u001b[90m 108 |\u001b[39m\u001b[0m\n\u001b[2m    at InsurancePage.expectValidationError (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\InsurancePage.js:105:40)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\insurance\\insurance.spec.js:48:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:12.735Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\insurance-insurance-Insura-ac85e--blocks-purchase-regression-finserve-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\insurance-insurance-Insura-ac85e--blocks-purchase-regression-finserve-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\insurance-insurance-Insura-ac85e--blocks-purchase-regression-finserve-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\InsurancePage.js",
+                        "column": 40,
+                        "line": 105
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "21c65df6cbe159e97221-9b43307e09a08a23a360",
+              "file": "insurance/insurance.spec.js",
+              "line": 41,
+              "column": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "insurance\\policies.spec.js",
+      "file": "insurance/policies.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Policy Management @insurance",
+          "file": "insurance/policies.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "policy list shows empty state for a user with no policies @regression",
+              "ok": true,
+              "tags": [
+                "insurance",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4154,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:11.664Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c94d1e5105c005ea812-aa43f3557001e31663e9",
+              "file": "insurance/policies.spec.js",
+              "line": 11,
+              "column": 3
+            },
+            {
+              "title": "policy detail shows a lifecycle status of Pending Issuance or Active @regression",
+              "ok": true,
+              "tags": [
+                "insurance",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4208,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:15.879Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c94d1e5105c005ea812-5fee94b4a064cc5f515e",
+              "file": "insurance/policies.spec.js",
+              "line": 17,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mutual-funds\\investment.spec.js",
+      "file": "mutual-funds/investment.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Mutual Fund Investment @mutual-funds",
+          "file": "mutual-funds/investment.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SIP investment below minimum is rejected with a clear validation message @regression",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5280,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:20.135Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "370bd44f6c6f88c890f0-321799c92b6a7855a47a",
+              "file": "mutual-funds/investment.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "confirmation is not shown without accepting the mandatory declaration @regression",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6101,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:25.452Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "370bd44f6c6f88c890f0-b9dffa5e6ac4cae75d02",
+              "file": "mutual-funds/investment.spec.js",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "boundary: investment exactly at documented minimum is accepted @regression",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7107,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:29.466Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "370bd44f6c6f88c890f0-2cf565c4f486211aee3b",
+              "file": "mutual-funds/investment.spec.js",
+              "line": 60,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mutual-funds\\mutual-funds.spec.js",
+      "file": "mutual-funds/mutual-funds.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Mutual Fund Discovery @mutual-funds",
+          "file": "mutual-funds/mutual-funds.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "search with a nonsense term returns no results, not an error page @regression",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4622,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:31.594Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4b2e5802c968b632e41f-503d47ec2934f3b75f85",
+              "file": "mutual-funds/mutual-funds.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "filtering by risk level narrows results consistently @regression",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4178,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:36.252Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4b2e5802c968b632e41f-c75608c4048dfbf069b5",
+              "file": "mutual-funds/mutual-funds.spec.js",
+              "line": 21,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "portfolio\\portfolio.spec.js",
+      "file": "portfolio/portfolio.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Portfolio Management @portfolio",
+          "file": "portfolio/portfolio.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "portfolio shows an empty state for a user with no holdings @regression",
+              "ok": true,
+              "tags": [
+                "portfolio",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3792,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:37.150Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7aa7798efec89b535eac-b5be715dfef30aa58a0c",
+              "file": "portfolio/portfolio.spec.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "portfolio total value is a valid positive currency figure @regression",
+              "ok": true,
+              "tags": [
+                "portfolio",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3796,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:40.474Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7aa7798efec89b535eac-a6e69a56465a7e124314",
+              "file": "portfolio/portfolio.spec.js",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "portfolio row shows current value and gain/loss for each holding @regression",
+              "ok": true,
+              "tags": [
+                "portfolio",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3970,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:41.009Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7aa7798efec89b535eac-4cf7ebddeb458028f679",
+              "file": "portfolio/portfolio.spec.js",
+              "line": 26,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "portfolio\\redemption.spec.js",
+      "file": "portfolio/redemption.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Redemption Flow @portfolio",
+          "file": "portfolio/redemption.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "redemption amount exceeding available balance is rejected @regression",
+              "ok": true,
+              "tags": [
+                "portfolio",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6007,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:44.320Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0d0e21b1282aa6e9a57f-6203e57bfcfdab1fe3b3",
+              "file": "portfolio/redemption.spec.js",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "zero-amount redemption is blocked client-side @regression",
+              "ok": true,
+              "tags": [
+                "portfolio",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5777,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:45.029Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0d0e21b1282aa6e9a57f-05eec751f1cfb76b4471",
+              "file": "portfolio/redemption.spec.js",
+              "line": 32,
+              "column": 3
+            },
+            {
+              "title": "successful redemption reduces the holding value shown on portfolio page @regression",
+              "ok": true,
+              "tags": [
+                "portfolio",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5945,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:50.364Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0d0e21b1282aa6e9a57f-2e2b8736a799d2bfa529",
+              "file": "portfolio/redemption.spec.js",
+              "line": 43,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "transactions\\transactions.spec.js",
+      "file": "transactions/transactions.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Transaction History @transactions",
+          "file": "transactions/transactions.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a fresh investment appears in transaction history immediately (no stale cache) @regression",
+              "ok": false,
+              "tags": [
+                "transactions",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15899,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('invest-now-button')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('invest-now-button')\u001b[22m\n\n    at FundDetailsPage.clickInvest (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\FundDetailsPage.js:40:29)\n    at C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\transactions\\transactions.spec.js:22:23",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\FundDetailsPage.js",
+                          "column": 29,
+                          "line": 40
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.js:40\n\n\u001b[0m \u001b[90m 38 |\u001b[39m\n \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/invest/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\FundDetailsPage.js",
+                            "column": 29,
+                            "line": 40
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('invest-now-button')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.js:40\n\n\u001b[0m \u001b[90m 38 |\u001b[39m\n \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/invest/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m }\u001b[0m\n\u001b[2m    at FundDetailsPage.clickInvest (C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\FundDetailsPage.js:40:29)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\transactions\\transactions.spec.js:22:23\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:50.853Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\transactions-transactions--b46c2-y-no-stale-cache-regression-finserve-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\transactions-transactions--b46c2-y-no-stale-cache-regression-finserve-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\transactions-transactions--b46c2-y-no-stale-cache-regression-finserve-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\pages\\FundDetailsPage.js",
+                        "column": 29,
+                        "line": 40
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9fdfbbef505194f75db4-21daad83a7632817585f",
+              "file": "transactions/transactions.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "filtering by transaction type returns only matching rows @regression",
+              "ok": true,
+              "tags": [
+                "transactions",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3748,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:57:56.351Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9fdfbbef505194f75db4-a2fc5061373f36ef2003",
+              "file": "transactions/transactions.spec.js",
+              "line": 35,
+              "column": 3
+            },
+            {
+              "title": "filtering by Failed status returns only matching rows @regression",
+              "ok": false,
+              "tags": [
+                "transactions",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 3783,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Failed/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m                                SUCCESS\u001b[39m\n\u001b[31m                            \"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Failed/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m                                SUCCESS\u001b[39m\n\u001b[31m                            \"\u001b[39m\n    at C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\transactions\\transactions.spec.js:53:21",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\transactions\\transactions.spec.js",
+                          "column": 21,
+                          "line": 53
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 51 |\u001b[39m     expect(statusLabels\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m label \u001b[36mof\u001b[39m statusLabels) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m       expect(label)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/Failed/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     }\n \u001b[90m 55 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\transactions\\transactions.spec.js",
+                            "column": 21,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Failed/i\u001b[39m\nReceived string:  \u001b[31m\"\u001b[39m\n\u001b[31m                                SUCCESS\u001b[39m\n\u001b[31m                            \"\u001b[39m\n\n\u001b[0m \u001b[90m 51 |\u001b[39m     expect(statusLabels\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m label \u001b[36mof\u001b[39m statusLabels) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m       expect(label)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/Failed/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     }\n \u001b[90m 55 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\transactions\\transactions.spec.js:53:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:58:00.133Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\transactions-transactions--ad231-ly-matching-rows-regression-finserve-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\transactions-transactions--ad231-ly-matching-rows-regression-finserve-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\reports\\test-results\\transactions-transactions--ad231-ly-matching-rows-regression-finserve-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\Desktop\\financial-services-retail-automation-latest\\tests\\transactions\\transactions.spec.js",
+                        "column": 21,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9fdfbbef505194f75db4-9fe37379c25ab466a215",
+              "file": "transactions/transactions.spec.js",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "user with no activity sees an empty transaction history state @regression",
+              "ok": true,
+              "tags": [
+                "transactions",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "finserve-chromium",
+                  "projectName": "finserve-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3400,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-25T08:58:05.022Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9fdfbbef505194f75db4-37545996ce10c57ed1bd",
+              "file": "transactions/transactions.spec.js",
+              "line": 57,
+              "column": 3
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-08-17T12:34:01.578Z",
-    "duration": 171.92499999999995,
-    "expected": 0,
+    "startTime": "2026-09-25T08:56:44.291Z",
+    "duration": 84506.99100000001,
+    "expected": 30,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 4,
     "flaky": 0
   }
 }
