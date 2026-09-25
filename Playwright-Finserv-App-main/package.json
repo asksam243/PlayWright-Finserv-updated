@@ -1,0 +1,24 @@
+{
+  "name": "financial-services-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright QA automation for FinServe Retail Demo Platform (Mutual Funds + Insurance B2C platform)",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:api": "playwright test tests/api",
+    "test:auth": "playwright test tests/auth",
+    "test:mutual-funds": "playwright test tests/mutual-funds",
+    "test:portfolio": "playwright test tests/portfolio",
+    "test:insurance": "playwright test tests/insurance",
+    "test:transactions": "playwright test tests/transactions",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report reports/html-report",
+    "install:browsers": "playwright install --with-deps"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "dotenv": "^16.6.1"
+  }
+}
